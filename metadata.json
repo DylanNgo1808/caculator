@@ -1,0 +1,5 @@
+{
+  "name": " AOV.AI ROI Calculator",
+  "description": "A responsive, visually appealing ROI calculator for an e-commerce 'Gift with Purchase' app. Users can adjust inputs like current Average Order Value (AOV), monthly orders, and gift costs to see projected profit boosts and ROI, visualized with gauges and charts.",
+  "requestFramePermissions": []
+}
