@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect  } from 'react';
 import { CalculatorInputs } from './types';
 import Header from './components/Header';
 import InputPanel from './components/InputPanel';
@@ -23,6 +23,26 @@ const App: React.FC = () => {
   });
 
   const results = useRoiCalculator(inputs);
+
+  useEffect(() => {
+    const sendHeight = () => {
+      window.parent.postMessage(
+          {
+            type: 'resize',
+            height: document.body.scrollHeight
+          },
+          '*'
+      );
+    };
+    sendHeight();
+    window.addEventListener('resize', sendHeight);
+    const observer = new MutationObserver(sendHeight);
+    observer.observe(document.body, { childList: true, subtree: true });
+    return () => {
+      window.removeEventListener('resize', sendHeight);
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-transparent p-4 sm:p-6 lg:p-8">
