@@ -47,7 +47,7 @@ const InputPanel: React.FC<InputPanelProps> = ({ inputs, setInputs }) => {
   };
 
   return (
-    <div className="bg-gray-medium p-6 rounded-lg shadow-lg space-y-6">
+    <div className="rounded-[12px] border border-[#04443E] bg-white/5 backdrop-blur-[17.15px] p-6 rounded-lg shadow-lg space-y-6">
       <h2 className="text-xl font-bold text-white border-b border-gray-light pb-2">Your store's numbers</h2>
       
       <SliderInput
