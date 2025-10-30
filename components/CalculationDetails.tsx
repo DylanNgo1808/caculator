@@ -10,7 +10,7 @@ const CodeBlock: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 
 const CalculationDetails: React.FC = () => {
   return (
-    <div className="bg-gray-medium p-6 rounded-lg shadow-lg text-gray-300 space-y-4">
+    <div className="rounded-[12px] border border-[#04443E] bg-white/5 backdrop-blur-[17.15px] p-6 rounded-lg shadow-lg text-gray-300 space-y-4">
         <h3 className="text-lg font-semibold text-white">Our model follows three simple steps:</h3>
         <ol className="list-decimal list-inside space-y-1">
             <li>We estimate how many orders will reach your gift threshold.</li>
