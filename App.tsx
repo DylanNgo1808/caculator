@@ -45,7 +45,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-      <div className="min-h-screen bg-transparent p-4 sm:p-6 lg:p-8">
+      <div className="min-h-screen bg-transparent px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto space-y-8  rounded-[20px] border border-[#03221D] bg-[rgba(0,205,174,0.05)] py-[80px] px-[60px]">
           <Header/>
           <main className="grid grid-cols-1 lg:grid-cols-2 gap-8">
