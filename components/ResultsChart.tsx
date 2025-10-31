@@ -81,7 +81,7 @@ const ResultsChart: React.FC<ResultsChartProps> = ({ results, inputs }) => {
                 content={renderCustomLabel}
             />
             {data.map((_entry, index) => {
-               const colors = ['#4F46E5', '#10B981', '#10B981', '#F97316'];
+               const colors = ['#4F46E5', '#00CDAE', '#00CDAE', '#F97316'];
                return <Cell key={`cell-${index}`} fill={colors[index]} />;
             })}
           </Bar>

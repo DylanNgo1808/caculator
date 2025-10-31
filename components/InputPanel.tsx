@@ -135,7 +135,7 @@ const InputPanel: React.FC<InputPanelProps> = ({ inputs, setInputs }) => {
             </button>
             <button
               onClick={() => handleMultiplierChange(2)}
-              className={`p-3 rounded-lg text-center font-semibold transition ${inputs.holidayMultiplier === 2 ? 'bg-brand-primary text-white' : 'bg-gray-dark text-gray-300 hover:bg-gray-light/50'}`}
+              className={`p-3 rounded-lg text-center font-semibold transition ${inputs.holidayMultiplier === 2 ? 'bg-[#00CDAE] text-white' : 'bg-gray-dark text-gray-300 hover:bg-gray-light/50'}`}
             >
                 BFCM (2x)
             </button>
