@@ -38,7 +38,7 @@ const RoiGauge: React.FC<RoiGaugeProps> = ({ roi }) => {
         <defs>
           <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#34D399" />
-            <stop offset="100%" stopColor="#10B981" />
+            <stop offset="100%" stopColor="#00CDAE" />
           </linearGradient>
         </defs>
         <path d={describeArc(100, 100, 70, 0, 180)} fill="none" stroke="#4B5563" strokeWidth="20" strokeLinecap="round" />

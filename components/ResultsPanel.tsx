@@ -30,7 +30,7 @@ const AOVComparisonChart: React.FC<{currentAov: number, projectedAov: number}> =
           <Bar dataKey="value" barSize={50} radius={[4, 4, 0, 0]}>
             <LabelList dataKey="value" position="top" formatter={formatSimpleCurrency} fill="#FFFFFF" fontSize={14} />
             {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={index === 0 ? '#4338CA' : '#10B981'} />
+              <Cell key={`cell-${index}`} fill={index === 0 ? '#4338CA' : '#00CDAE'} />
             ))}
           </Bar>
         </BarChart>
@@ -59,11 +59,11 @@ const ResultsPanel: React.FC<ResultsPanelProps> = ({ results, inputs }) => {
       
       <div>
           <p className="text-sm text-gray-300">Projected monthly profit boost</p>
-          <p className="text-5xl font-bold text-brand-primary">{formatCurrency(results.projectedProfitBoost)}</p>
+          <p className="text-5xl font-bold -brand-primarytext">{formatCurrency(results.projectedProfitBoost)}</p>
       </div>
       <div>
           <p className="text-sm text-gray-300">Return on Investment (ROI)</p>
-          <p className="text-5xl font-bold text-brand-primary">{results.roi.toFixed(0)}%</p>
+          <p className="text-5xl font-bold text-[#00CDAE]">{results.roi.toFixed(0)}%</p>
       </div>
 
       <div className="space-y-4 pt-4 border-t border-gray-light">
