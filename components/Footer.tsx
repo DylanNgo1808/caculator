@@ -45,9 +45,9 @@ Projected AOV: ${formatCurrency(results.projectedAov)}
 
   return (
     <footer className="rounded-[12px] border border-[#04443E] bg-white/5 backdrop-blur-[17.15px] p-6 rounded-lg shadow-lg flex flex-col sm:flex-row justify-center items-center gap-4">
-      <button className="w-full sm:w-auto bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-lg transition-colors shadow-md">
+      <a type={"button"} target={"_blank"} href={"https://apps.shopify.com/avada-upsell?utm_source=avada.io&utm_medium=web_button&utm_campaign=BFCM&utm_content=start_free_trial"} className="w-full sm:w-auto bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-lg transition-colors shadow-md">
         Start Free Trial
-      </button>
+      </a>
       <button 
         onClick={handleCopyReport}
         className="w-full sm:w-auto bg-transparent border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white font-bold py-3 px-8 rounded-lg transition-colors"
